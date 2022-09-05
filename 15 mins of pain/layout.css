@@ -18,3 +18,30 @@ section {
 footer {
     clear: both;
 }
+
+/* Make the section show blue when width is from 0 to 600px */
+@media all and (max-width: 600px) {
+    section {
+        background: blue;
+    }
+}
+/* Make the section shows green when width is between 609px and 900px*/
+@media all and (min-width: 601px) and (max-width: 900px) {
+    section {
+        background: green;
+    }
+}
+
+/*Make the middle section disappears when width is 0 - 300px*/
+@media all and (max-width: 300px) {
+    .middle {
+        display: none;
+    }
+}
+/* Make the section stacking on top of each other when width is 301px-600px*/
+@media all and (min-width: 301px) and (max-width: 600px) {
+    section {
+        float: none;
+        width: auto;
+    }
+}
